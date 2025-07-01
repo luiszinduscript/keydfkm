@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Dkf Hub Key</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding-top: 50px;
+    }
+    .key-box {
+      background: #222;
+      padding: 20px;
+      border-radius: 10px;
+      display: inline-block;
+    }
+    .key {
+      font-size: 18px;
+      margin-bottom: 10px;
+      user-select: all;
+    }
+    button {
+      background: #08f;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #06c;
+    }
+  </style>
+</head>
+<body>
+  <div class="key-box">
+    <h1>Dkf Hub - Chave de Acesso</h1>
+    <p class="key" id="key">d9fhubmelho3rrrscriptbylu1s</p>
+    <button onclick="copyKey()">Copiar Chave</button>
+  </div>
+
+  <script>
+    function copyKey() {
+      const keyText = document.getElementById("key").innerText;
+      navigator.clipboard.writeText(keyText).then(function() {
+        alert("Chave copiada: " + keyText);
+      }, function() {
+        alert("Erro ao copiar a chave.");
+      });
+    }
+  </script>
+</body>
+</html>
